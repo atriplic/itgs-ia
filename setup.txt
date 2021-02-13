@@ -1,0 +1,7 @@
+python3
+from app import db
+db.create_all()
+from models import Event1
+from datetime import datetime
+e1 = Event1(event_name = "xyz", event_date = datetime.utcnow
+exit()

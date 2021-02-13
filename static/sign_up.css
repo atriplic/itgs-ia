@@ -1,0 +1,75 @@
+h2{text-align:center; font-size: 250%; background: purple; font-family: cursive; color: yellow;}
+body{background: purple;}
+form{text-align: center; font-size: 200%; background: purple; color: yellow;}
+header{font-family: Lobster; background-color: purple; padding: 30px; text-align: center; font-size: 35px; color: white;}
+label{font-family: cursive;}
+nav{text-align: center; background: purple; font-size: 200%;}
+marquee{text-align: center; color: yellow;}
+.save{width: 130px; height: 50px; font-size: 100%;}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  background: #b19cd9;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #800000;
+  color: white;
+}
+
+/* Style the container for inputs */
+.container {
+
+  padding: 20px;
+}
+
+.username{background: #DCAE96;}
+.password{background: #DCAE96;}
+.info{background: #DCAE96;}
+h3{color: red; text-align: center;}
+script{text-align:center;}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display:none;
+  background: black;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}

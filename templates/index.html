@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>ITGS IA</title>
+    <link href="/static/index.css" rel="stylesheet">
+</head>
+<body>
+
+<h2><u>Home Page</u></h2>
+
+<header>
+	<img src="/static/logo.png" alt="Logo">
+</header>
+
+<section>
+  <nav>
+      {% block main %}
+  {% for event in events %}
+    <div class="card">
+      <div class="card-body">
+        <h3>{{ event.title }}</h3>
+        <p> on {{ event.date }}</p>
+        <a href="{{ url_for('edit', event_id=event.id) }}" class="btn btn-primary">Edit</a>
+        <a href="{{ url_for('delete', event_id=event.id) }}" class="btn btn-danger">Delete</a>
+      </div>
+    </div>
+  {% endfor %}
+{% endblock %}
+  </nav>
+  
+  <article>
+	<img src="/static/Christmas-Present-PNG-Photo.png" class="image11" alt="Gifts">
+	<img src="/static/cake_PNG13136.png" class="image12" alt="Balloons">
+	<img src="/static/ice_cream_PNG21014.png" class="image13" alt="Party">
+  </article>
+</section>
+<footer>
+<table>
+  <tr>
+  	<th><a href="#">Home</a></th>
+    <th><a href="#">About</a></th>
+	<th><a href="#">Services</a></th>
+    <th><a href="#">Testimonials</a></th>
+    <th><a href="#">Contact</a></th>
+  </tr>
+  
+</table>
+</footer>
+</body>
+</html>
+
+<!--{% extends "base.html" %}-->
+

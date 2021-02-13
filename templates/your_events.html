@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>ITGS IA</title>
+    <link href="/static/home_page1.css" rel="stylesheet">
+</head>
+<body>
+<header>
+	<img src="/static/logo5.png" alt="Logo">
+</header>
+<section>
+  <nav>
+            <h4><u><i>Your Events</i></u></h4>
+
+      {% block main %}
+  {% for event in events1 %}
+    <div class="card">
+      <div class="card-body">
+        <h3>{{ event.event_name }}
+            on {{ event.event_date }}
+
+        <a href="{{ url_for('delete1', event_id=event.id) }}" class="btn btn-danger">Delete</a>
+        </h3>
+      </div>
+    </div>
+  {% endfor %}
+{% endblock %}
+  </nav>
+
+  <article>
+	<marquee direction="left" scrollamount="20">
+	<img src="/static/Christmas-Present-PNG-Photo.png" class="image11" alt="Gifts">
+	<img src="/static/cake_PNG13136.png" class="image12" alt="Balloons">
+	<img src="/static/ice_cream_PNG21014.png" class="image13" alt="Party">
+    <img src="/static/confetti.png" class="image13" alt="Confetti">
+    </marquee>
+  </article>
+</section>
+<footer>
+<table>
+  <tr>
+  	<th><a href="http://127.0.0.1:5000/">Home</a></th>
+    <th><a href="{{ url_for('about') }}" class="nav-link">About</a></th>
+	<th><a href="{{ url_for('services') }}" class="nav-link">Services</a></th>
+    <th><a href="{{ url_for('testimonials') }}" class="nav-link">Testimonials</a></th>
+  </tr>
+</table>
+</footer>
+</body>
+</html>
+
+

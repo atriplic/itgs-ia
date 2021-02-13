@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body{background: purple;}
+h1{color: yellow;}
+
+.container {
+  border: 2px solid #ccc;
+  background-color: #b19cd9;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  .container {
+      text-align: center;
+  }
+  .container img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1>Testimonials</h1>
+
+<div class="container">
+  <p><span>Sushant Sinha</span>Parent of 7 year old</p>
+  <p>We had our 7 year old son’s birthday party, that was a big hit! The magic show, the games, and the food were awesome. Thank you so much Shubha for everything!!</p>
+</div>
+
+<div class="container">
+  <p><span>Ananya Kulkarni</span>Anniversary</p>
+  <p>DreamPartyPlannerz helped us reimagine the magical moment from 25 years back. Our 25th wedding anniversary with our parents and kids was really special. Catering food for 3 generations is hard. Thanks shubha for making it special for every one of us!</p>
+</div>
+
+<div class="container">
+  <p><span>Vijay Srivastava</span> Reunion was awesome!</p>
+  <p>Our 20th anniversary of high school reunion was amazing, I will definitely call shubha for our 40th anniversary as well 😂👍</p>
+</div>
+
+<div class="container">
+  <p><span>Vishnu Rangachari</span> Very lovely</p>
+  <p>Nothing beats the amazing services and food that DREAMPARTYPLANNERZ offered. Thank you for a beautiful experience!</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "UTF-8">
+	<title>ITGS IA</title>
+	<link rel="stylesheet" href="/static/add_event.css">
+</head>
+<body>
+	<h1>Create an Event</h1>
+<br>
+<br>
+  <form action="/add1" method="post">
+  <label for="fname">Event name:</label>
+  <input type="text" id="fname" name="event_name"><br><br>
+  <label for="lname">Date of Event:</label>
+  <input type="Date" id="myDate" name="event_date" value=""><br><br>
+  <label for="fname">Time:</label>
+  <input type="time" id="appt" name="appt"><br><br>
+  <label for="quantity">Number of People:</label>
+  <input type="number" id="quantity" name="quantity"><br><br>
+  <label for="fname">Food Type:</label>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Vegetarian</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Non-Vegetarian</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Both</label><br><br>
+  <label for="fname">Theme:</label>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> Birthday Party</label>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> Wedding</label>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> Holiday Occation</label>
+  <input type="radio" id="other" name="theme" value="other">
+  <label for="other">Other</label>
+  <input type="text" id="lname" name="lname" value=""><br><br><br>
+  <label for="lname">Phone Number:</label>
+  <input type="text" name="phone_number" pattern="[7-9]{1}[0-9]{9}" title="Phone number with 7-9 and remaing 9 digit with 0-9"><br><br>
+  <label for="lname">Any other information?</label><br>
+  <textarea id="subject" name="info" placeholder="Write something.." style="height:200px"></textarea><br>
+  <input type="submit" value="Save">
+</form>
+
+</body>
+</html>
+

@@ -26,6 +26,11 @@ def sign_up():
     print('in Sign Up')
     return render_template('sign_up.html')
 
+@app.route('/contact')
+def contact():
+    print('in Contact')
+    return render_template('contact.html')
+
 @app.route('/about')
 def about():
     print('in About')

@@ -1,0 +1,12 @@
+body{background: purple;}
+
+h1{color: yellow; text-align: center;}
+
+table{font-family: arial, sans-serif; border-collapse: collapse; width: 100%;}
+
+td, th{border: 1px solid #dddddd; text-align: center; padding: 8px;}
+
+tr:nth-child(even){background-color: #E6E6FA;}
+
+tr:nth-child(odd){background-color: #b19cd9;}
+

@@ -16,6 +16,7 @@
         <ul class="navbar-nav">
           <li class="nav-item"><a href="{{ url_for('your_events') }}" class="nav-link">Events</a></li>
           <li class="nav-item"><a href="{{ url_for('add1') }}" class="nav-link">Add New Event</a></li>
+          <li class="nav-item"><a href="{{ url_for('contact') }}" class="nav-link">Contact Information</a></li>
         </ul>
 
       {% block main %}
@@ -41,10 +42,11 @@
 <footer>
 <table>
   <tr>
-  	<th><a href="http://127.0.0.1:5000/">Home</a></th>
+    <th><a href="http://127.0.0.1:5000/">Home</a></th>
     <th><a href="{{ url_for('about') }}" class="nav-link">About</a></th>
 	<th><a href="{{ url_for('services') }}" class="nav-link">Services</a></th>
     <th><a href="{{ url_for('testimonials') }}" class="nav-link">Testimonials</a></th>
+    <th><a href="{{ url_for('landing') }}">Sign Out</a></th>
   </tr>
 </table>
 </footer>

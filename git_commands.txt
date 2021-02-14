@@ -1,0 +1,516 @@
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ git
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ git init
+Initialized empty Git repository in /Users/triplicane/PycharmProjects/EventPlanning/.git/
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ ls -lrt
+total 64
+-rwxr-xr-x@  1 triplicane  staff   393 Sep 19 20:14 forms.py
+-rwxr-xr-x@  1 triplicane  staff   308 Sep 27 13:03 app.py
+-rwxr-xr-x@  1 triplicane  staff   280 Sep 27 17:34 models.py
+drwx------   9 triplicane  staff   288 Dec 15 23:13 Archive
+drwxr-xr-x  25 triplicane  staff   800 Feb 12 20:51 static
+-rwxr-xr-x@  1 triplicane  staff  4797 Feb 12 23:21 routes.py
+drwxr-xr-x   6 triplicane  staff   192 Feb 12 23:21 __pycache__
+drwxr-xr-x@ 26 triplicane  staff   832 Feb 12 23:28 templates
+-rw-r--r--   1 triplicane  staff  8192 Feb 13 08:47 site.db
+-rw-r--r--   1 triplicane  staff   166 Feb 13 16:55 setup.txt
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ git remote add orgin https://github.com/atriplic/itgs-ia.git
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ git remote add origin https://github.com/atriplic/itgs-ia.git
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .idea/
+        Archive/
+        __pycache__/
+        app.py
+        forms.py
+        models.py
+        routes.py
+        setup.txt
+        site.db
+        static/
+        templates/
+
+nothing added to commit but untracked files present (use "git add" to track)
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .idea/
+        __pycache__/
+        app.py
+        forms.py
+        models.py
+        routes.py
+        setup.txt
+        site.db
+        static/
+        templates/
+
+nothing added to commit but untracked files present (use "git add" to track)
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ vi .gitignore
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ vi .gitignore
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ git add .
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   .idea/.gitignore
+        new file:   .idea/EventPlanning.iml
+        new file:   .idea/inspectionProfiles/profiles_settings.xml
+        new file:   .idea/misc.xml
+        new file:   .idea/modules.xml
+        new file:   .idea/vcs.xml
+        new file:   __pycache__/app.cpython-38.pyc
+        new file:   __pycache__/forms.cpython-38.pyc
+        new file:   __pycache__/models.cpython-38.pyc
+        new file:   __pycache__/routes.cpython-38.pyc
+        new file:   app.py
+        new file:   forms.py
+        new file:   models.py
+        new file:   routes.py
+        new file:   setup.txt
+        new file:   site.db
+        new file:   static/58738b3af3a71010b5e8ef51.png
+        new file:   static/Christmas-Present-PNG-Photo.png
+        new file:   static/ITGS_HTML_IA.css
+        new file:   static/add_event.css
+        new file:   static/atul.css
+        new file:   static/cake_PNG13136.png
+        new file:   static/confetti.png
+        new file:   static/create_event.css
+        new file:   static/create_event1.css
+        new file:   static/event_flyer.png
+        new file:   static/home_page.css
+        new file:   static/home_page1.css
+        new file:   static/ice_cream_PNG21014.png
+        new file:   static/index.css
+        new file:   static/landing.css
+        new file:   static/login.css
+        new file:   static/logo.png
+        new file:   static/logo5.png
+        new file:   static/payment.css
+        new file:   static/personnel_details.css
+        new file:   static/sign_up.css
+        new file:   static/test.css
+        new file:   templates/about.html
+        new file:   templates/add.html
+        new file:   templates/atul.html
+        new file:   templates/base.html
+        new file:   templates/baseOld.html
+        new file:   templates/create_event.html
+        new file:   templates/create_event1.html
+        new file:   templates/delete.html
+        new file:   templates/edit.html
+        new file:   templates/edit_event.html
+        new file:   templates/home_page.html
+        new file:   templates/index.html
+        new file:   templates/indexOld.html
+        new file:   templates/landing.html
+        new file:   templates/login.html
+        new file:   templates/payment.html
+        new file:   templates/personnel_details.html
+        new file:   templates/services.html
+        new file:   templates/sign_up.html
+        new file:   templates/test.html
+        new file:   templates/testform.html
+        new file:   templates/testimonials.html
+        new file:   templates/your_events.html
+
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ git commit -m "initial changes"
+[master (root-commit) ab6dda4] initial changes
+ Committer: Triplicane <triplicane@Triplicanes-MBP.Dlink>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 61 files changed, 1542 insertions(+)
+ create mode 100644 .idea/.gitignore
+ create mode 100644 .idea/EventPlanning.iml
+ create mode 100644 .idea/inspectionProfiles/profiles_settings.xml
+ create mode 100644 .idea/misc.xml
+ create mode 100644 .idea/modules.xml
+ create mode 100644 .idea/vcs.xml
+ create mode 100644 __pycache__/app.cpython-38.pyc
+ create mode 100644 __pycache__/forms.cpython-38.pyc
+ create mode 100644 __pycache__/models.cpython-38.pyc
+ create mode 100644 __pycache__/routes.cpython-38.pyc
+ create mode 100755 app.py
+ create mode 100755 forms.py
+ create mode 100755 models.py
+ create mode 100755 routes.py
+ create mode 100644 setup.txt
+ create mode 100644 site.db
+ create mode 100644 static/58738b3af3a71010b5e8ef51.png
+ create mode 100644 static/Christmas-Present-PNG-Photo.png
+ create mode 100644 static/ITGS_HTML_IA.css
+ create mode 100644 static/add_event.css
+ create mode 100644 static/atul.css
+ create mode 100644 static/cake_PNG13136.png
+ create mode 100644 static/confetti.png
+ create mode 100644 static/create_event.css
+ create mode 100644 static/create_event1.css
+ create mode 100644 static/event_flyer.png
+ create mode 100644 static/home_page.css
+ create mode 100644 static/home_page1.css
+ create mode 100644 static/ice_cream_PNG21014.png
+ create mode 100644 static/index.css
+ create mode 100644 static/landing.css
+ create mode 100644 static/login.css
+ create mode 100644 static/logo.png
+ create mode 100644 static/logo5.png
+ create mode 100644 static/payment.css
+ create mode 100644 static/personnel_details.css
+ create mode 100644 static/sign_up.css
+ create mode 100644 static/test.css
+ create mode 100644 templates/about.html
+ create mode 100755 templates/add.html
+ create mode 100644 templates/atul.html
+ create mode 100644 templates/base.html
+ create mode 100755 templates/baseOld.html
+ create mode 100644 templates/create_event.html
+ create mode 100644 templates/create_event1.html
+ create mode 100755 templates/delete.html
+ create mode 100755 templates/edit.html
+ create mode 100644 templates/edit_event.html
+ create mode 100644 templates/home_page.html
+ create mode 100644 templates/index.html
+ create mode 100755 templates/indexOld.html
+ create mode 100644 templates/landing.html
+ create mode 100644 templates/login.html
+ create mode 100644 templates/payment.html
+ create mode 100644 templates/personnel_details.html
+ create mode 100644 templates/services.html
+ create mode 100644 templates/sign_up.html
+ create mode 100644 templates/test.html
+ create mode 100644 templates/testform.html
+ create mode 100644 templates/testimonials.html
+ create mode 100644 templates/your_events.html
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ git push origin master
+Username for 'https://github.com': atriplic
+Password for 'https://atriplic@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/atriplic/itgs-ia.git/'
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ git push origin master
+Username for 'https://github.com': atriplic        
+Password for 'https://atriplic@github.com': 
+Counting objects: 66, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (63/63), done.
+Writing objects: 100% (66/66), 3.53 MiB | 1.35 MiB/s, done.
+Total 66 (delta 9), reused 0 (delta 0)
+remote: Resolving deltas: 100% (9/9), done.
+remote: 
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/atriplic/itgs-ia/pull/new/master
+remote: 
+To https://github.com/atriplic/itgs-ia.git
+ * [new branch]      master -> master
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ python3 setup.py
+  File "setup.py", line 6
+    
+                                                                ^
+SyntaxError: unexpected EOF while parsing
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ python3 setup.py
+  File "setup.py", line 6
+    
+                                                                ^
+SyntaxError: unexpected EOF while parsing
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ python3 setup.py
+/opt/anaconda3/envs/EventPlanning/lib/python3.8/site-packages/flask_sqlalchemy/__init__.py:833: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  warnings.warn(FSADeprecationWarning(
+Traceback (most recent call last):
+  File "setup.py", line 1, in <module>
+    from app import db
+ImportError: cannot import name 'db' from 'app' (/Users/triplicane/PycharmProjects/EventPlanning/app.py)
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ python3 setup.py
+/opt/anaconda3/envs/EventPlanning/lib/python3.8/site-packages/flask_sqlalchemy/__init__.py:833: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  warnings.warn(FSADeprecationWarning(
+Traceback (most recent call last):
+  File "setup.py", line 2, in <module>
+    db.create_all()
+NameError: name 'db' is not defined
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ python3 setup.py
+/opt/anaconda3/envs/EventPlanning/lib/python3.8/site-packages/flask_sqlalchemy/__init__.py:833: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  warnings.warn(FSADeprecationWarning(
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ pip3 install requirements.txt 
+ERROR: Could not find a version that satisfies the requirement requirements.txt (from versions: none)
+ERROR: No matching distribution found for requirements.txt
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ pip install requirements.txt 
+ERROR: Could not find a version that satisfies the requirement requirements.txt (from versions: none)
+ERROR: No matching distribution found for requirements.txt
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ pip3 install -r requirements.txt 
+Requirement already satisfied: Flask in /opt/anaconda3/envs/EventPlanning/lib/python3.8/site-packages (from -r requirements.txt (line 1)) (1.1.2)
+Requirement already satisfied: SQLAlchemy in /opt/anaconda3/envs/EventPlanning/lib/python3.8/site-packages (from -r requirements.txt (line 2)) (1.3.18)
+Requirement already satisfied: click>=5.1 in /opt/anaconda3/envs/EventPlanning/lib/python3.8/site-packages (from Flask->-r requirements.txt (line 1)) (7.1.2)
+Requirement already satisfied: itsdangerous>=0.24 in /opt/anaconda3/envs/EventPlanning/lib/python3.8/site-packages (from Flask->-r requirements.txt (line 1)) (1.1.0)
+Requirement already satisfied: Werkzeug>=0.15 in /opt/anaconda3/envs/EventPlanning/lib/python3.8/site-packages (from Flask->-r requirements.txt (line 1)) (1.0.1)
+Requirement already satisfied: Jinja2>=2.10.1 in /opt/anaconda3/envs/EventPlanning/lib/python3.8/site-packages (from Flask->-r requirements.txt (line 1)) (2.11.2)
+Requirement already satisfied: MarkupSafe>=0.23 in /opt/anaconda3/envs/EventPlanning/lib/python3.8/site-packages (from Jinja2>=2.10.1->Flask->-r requirements.txt (line 1)) (1.1.1)
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ python3 app.py
+/opt/anaconda3/envs/EventPlanning/lib/python3.8/site-packages/flask_sqlalchemy/__init__.py:833: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  warnings.warn(FSADeprecationWarning(
+/opt/anaconda3/envs/EventPlanning/lib/python3.8/site-packages/flask_sqlalchemy/__init__.py:833: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  warnings.warn(FSADeprecationWarning(
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+/opt/anaconda3/envs/EventPlanning/lib/python3.8/site-packages/flask_sqlalchemy/__init__.py:833: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  warnings.warn(FSADeprecationWarning(
+/opt/anaconda3/envs/EventPlanning/lib/python3.8/site-packages/flask_sqlalchemy/__init__.py:833: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  warnings.warn(FSADeprecationWarning(
+ * Debugger is active!
+ * Debugger PIN: 145-849-162
+in Index
+127.0.0.1 - - [13/Feb/2021 17:47:47] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [13/Feb/2021 17:47:47] "GET /static/home_page1.css HTTP/1.1" 304 -
+127.0.0.1 - - [13/Feb/2021 17:47:47] "GET /static/logo5.png HTTP/1.1" 304 -
+127.0.0.1 - - [13/Feb/2021 17:47:47] "GET /static/Christmas-Present-PNG-Photo.png HTTP/1.1" 304 -
+127.0.0.1 - - [13/Feb/2021 17:47:47] "GET /static/cake_PNG13136.png HTTP/1.1" 304 -
+127.0.0.1 - - [13/Feb/2021 17:47:47] "GET /static/ice_cream_PNG21014.png HTTP/1.1" 304 -
+127.0.0.1 - - [13/Feb/2021 17:47:47] "GET /static/confetti.png HTTP/1.1" 304 -
+^C(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    setup.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        requirements.txt
+        setup.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ git add .
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   requirements.txt
+        new file:   setup.py
+        deleted:    setup.txt
+
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ git commit -m "initial changes"
+[master 96fef82] initial changes
+ Committer: Triplicane <triplicane@Triplicanes-MBP.Dlink>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 7 insertions(+), 7 deletions(-)
+ create mode 100644 requirements.txt
+ create mode 100644 setup.py
+ delete mode 100644 setup.txt
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ git push origin master
+To https://github.com/atriplic/itgs-ia.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/atriplic/itgs-ia.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ git pull
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+From https://github.com/atriplic/itgs-ia
+ * [new branch]      main       -> origin/main
+   ab6dda4..39e26c6  master     -> origin/master
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=<remote>/<branch> master
+
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ git pull origin master
+From https://github.com/atriplic/itgs-ia
+ * branch            master     -> FETCH_HEAD
+Merge made by the 'recursive' strategy.
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ git push origin master
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 693 bytes | 346.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/atriplic/itgs-ia.git
+   39e26c6..2495aae  master -> master
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ python3 app.py
+/opt/anaconda3/envs/EventPlanning/lib/python3.8/site-packages/flask_sqlalchemy/__init__.py:833: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  warnings.warn(FSADeprecationWarning(
+/opt/anaconda3/envs/EventPlanning/lib/python3.8/site-packages/flask_sqlalchemy/__init__.py:833: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  warnings.warn(FSADeprecationWarning(
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+/opt/anaconda3/envs/EventPlanning/lib/python3.8/site-packages/flask_sqlalchemy/__init__.py:833: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  warnings.warn(FSADeprecationWarning(
+/opt/anaconda3/envs/EventPlanning/lib/python3.8/site-packages/flask_sqlalchemy/__init__.py:833: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  warnings.warn(FSADeprecationWarning(
+ * Debugger is active!
+ * Debugger PIN: 145-849-162
+in Index
+127.0.0.1 - - [13/Feb/2021 18:01:52] "GET / HTTP/1.1" 200 -
+^C(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   requirements.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ git add .
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   requirements.txt
+
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ git commit -m "updated requirements.txt"
+[master b0135d6] updated requirements.txt
+ Committer: Triplicane <triplicane@Triplicanes-MBP.Dlink>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ git push origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 311 bytes | 311.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/atriplic/itgs-ia.git
+   2495aae..b0135d6  master -> master
+(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ python3 app.py
+/opt/anaconda3/envs/EventPlanning/lib/python3.8/site-packages/flask_sqlalchemy/__init__.py:833: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  warnings.warn(FSADeprecationWarning(
+/opt/anaconda3/envs/EventPlanning/lib/python3.8/site-packages/flask_sqlalchemy/__init__.py:833: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  warnings.warn(FSADeprecationWarning(
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+/opt/anaconda3/envs/EventPlanning/lib/python3.8/site-packages/flask_sqlalchemy/__init__.py:833: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  warnings.warn(FSADeprecationWarning(
+/opt/anaconda3/envs/EventPlanning/lib/python3.8/site-packages/flask_sqlalchemy/__init__.py:833: FSADeprecationWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True or False to suppress this warning.
+  warnings.warn(FSADeprecationWarning(
+ * Debugger is active!
+ * Debugger PIN: 145-849-162
+^C(EventPlanning) Triplicanes-MBP:EventPlanning triplicane$ 
+
+
+As an example, I made a change to requirements.txt locally. Here is what I had to do to commit my changes to GitHub:-
+
+git status
+git add .
+git status
+git commit -m "updated requirements.txt"
+git push origin master
+
